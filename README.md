@@ -22,9 +22,8 @@
 * Train using backprop with Adam optimizer, hyperparameters can be found in the code.
 
 ## Training Details
-* Trained for 22 epochs on colab TPU GPU
-* Achieved avg log likelihood on training dataset
-
+* Data was quantized to 4 bits per channel
+* Trained for 20 epochs on RTX 3090Ti
 
 ## Samples Generated
  ![Samples](sample.jpeg)
@@ -32,5 +31,6 @@
 ## Future changes/work
 * Cleaning the code to make it more readable and efficieent
 * Trying it as a prior on VQ-VAE
+* Trying other quantizations and seeing the changes in quality of samples
 * Scaling the method to generate color image 
 * HyperParameter Search
